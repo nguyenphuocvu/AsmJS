@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  max-width: 1200px;
+}
+
+.col {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-sm {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.row-sm {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.header-top {
+  border-bottom: 1px solid #aaa;
+}
+
+.footer-block {
+  border-top: 1px solid #aaa;
+}
+
+.menu-text {
+  transition: all 0.3s;
+  border-bottom: 1px solid transparent;
+}
+
+.menu-text:hover {
+  color: #c89979;
+  border-color:#c89979;
+}
+
+.menu-text--choose {
+  color: #c89979;
+  border-color:#c89979;
+}
+
+.cart-text {
+  transition: all 0.2s;
+}
+
+.cart-text:hover {
+  color: #c89979;
+}
+
+.bg-maincolor {
+  background-color: #c89979;
+}
+
+.banner {
+  height: 600px;
+}
+
+.banner-current {
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content-block {
+  padding-top: 60px;
+}
+
+.content-img-contain {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  margin: 30px 0; 
+}
+
+.content-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: all 0.4s;
+}
+
+.content-img-text {
+  position: absolute;
+  color: white;
+}
+
+.content-img-text div {
+  width: 50px;
+  border-bottom: 2px solid #6E5644;
+}
+
+.content-img-contain:hover .content-img{
+  transform: scale(1.1)
+}
+
+.content-img-contain + .content-img-contain{
+  margin-left: 30px;
+}
+
+.content-img-1 {
+  background-image: url("http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/trend-1.jpg");
+}
+
+.content-img-2 {
+  background-image: url("http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/trend-2.jpg");
+}
+
+.content-img-3 {
+  background-image: url("http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/banner-03.jpg");
+}
+
+.content-img-4 {
+  background-image: url("http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/banner-04.jpg");
+}
+
+.color-main {
+  color: #c89979;
+}
+
+.color-main:hover {
+  color: #a88166;
+}
+
+.btn-main {
+  padding: 8px;
+  border: 1px solid #c89979;
+  border-radius: 3px;
+  background-color: #c89979;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-main:hover {
+  border: 1px solid #a88166;
+  background-color: #a88166;
+}
+
+.text-maincolor {
+  color: #c89979;
+}
+
+.products {
+  margin: 30px -15px;
+}
+
+.product-item {
+  padding: 0 5px;
+  padding-bottom: 30px;
+}
+
+.select {
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+
+.select:hover .drop-down {
+  display: block;
+}
+
+.drop-down {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 200px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.drop-down a {
+  display: block;
+  padding: 4px 8px;
+}
+
+.drop-down a:hover {
+  background-color: rgba(0,0,0,0.1)
+}
+
+.error {
+  color: red;
+}
+
+.header-user {
+  border-bottom: 1px solid #aaa;
+}
